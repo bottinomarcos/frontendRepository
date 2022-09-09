@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+:root {
+    --bg-navbar: #212529;
+    --bg-body: #f5f5f5;
+    --txt-grayColor: #9297a3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar span {
+    color: var(--bg-body);
+    font-weight: 400;
+}
+
+.navbar i {
+    position: relative;
+    color: gray;
+    cursor: pointer;
+    top: 5px;
+    transition: 1s;
+}
+
+.navbar i:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar .logoAP {
+    width: 9%;
+    position: relative;
+    top: 1px;
+}
+
+.navbar .redesContainer {
+    width: 15%;
+    height: 36px;
+    position: relative;
+    left: 0.7%;
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: 8px;
+    bottom: 4px;
+}
+
+/* Start Login Popup*/
+
+#popup-container {
+    position: absolute;
+    left: 33.5%;
+    top: 7%;
+    width: 36%;
+    height: 27em;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+    display: none;
+    background: whitesmoke;
+    border-radius: 25px;
+}
+
+#close-btn {
+    float: right;
+    font-size: 25px;
+    height: 18px;
+    width: 3%;
+    cursor: pointer;
+}
+
+.closeBtn {
+    position: relative;
+    bottom: 77%;
+    right: 9%;
+    cursor: pointer;
+}
+
+.titlePopup {
+    text-align: center;
+    position: relative;
+    top: 5%;
+}
+
+/*End Login popup*/
+
+.profileContainer {
+    background: whitesmoke;
+    margin: 10px;
+    height: 38em;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.profileContainer .portadaProfile {
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.profileContainer .logoContainer {
+    width: 10%;
+    height: 23%;
+    position: relative;
+    bottom: 12%;
+    left: 1%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 14px 2px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 0px 0px 14px 2px rgb(0 0 0 / 75%);
+}
+
+.logoContainer .logoProfile {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.datosContainer {
+    position: relative;
+    bottom: 12%;
+    left: 1%;
+    width: 18%;
+    height: 12%;
+}
+
+.infoContainer {
+    position: relative;
+    bottom: 8px;
+    left: 0.4%;
+}
+
+.infoContainer .ubiDatos {
+    position: relative;
+    bottom: 16px;
+}
+
+.buttonsContainer {
+    position: relative;
+    width: 145%;
+    height: 35px;
+    bottom: 33px;
+}
+
+.logoDtsContainer {
+    position: relative;
+    left: 87%;
+    width: 10%;
+    height: 59px;
+    bottom: 24%;
+}
+
+.logoDtsContainer .conicetImg {
+    position: relative;
+    width: 33%;
+    height: 37px;
+}
+
+.logoDtsContainer .conicetName {
+    position: relative;
+    left: 50%;
+    width: 60px;
+    bottom: 30px;
+    font-weight: 600;
+}
+
+.logoDtsContainer .utnImg {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    bottom: 37px;
+    right: 5px;
+}
+
+.logoDtsContainer .utnName {
+    position: relative;
+    left: 50%;
+    width: 78px;
+    bottom: 77px;
+    font-weight: 600;
+}
+
+/* End Profile Container */
+
+/* Start Acerca de Container */
+
+.acercaDeContainer {
+    position: relative;
+    top: 0.5em;
+    margin: 10px;
+    height: 5.5em;
+    background: white;
+    border-radius: 20px;
+    right: 2px;
+}
+
+.acercaDeContainer .acercadeTitle {
+    width: 11%;
+    position: relative;
+    top: 10%;
+    left: 1%;
+    font-size: 28px;
+}
+
+.acercaDeContainer .acercadeTxt {
+    position: relative;
+    left: 1%;
+    top: 4%;
+    font-size: 14.5px;
+    width: 58%;
+}
+
+.acercaDeContainer .editacercadeContainer {
+    position: relative;
+    left: 94.5%;
+    bottom: 68%;
+    width: 4.5%;
+    height: 50px;
+}
+
+.editacercadeContainer .editAcercaDe {
+    position: relative;
+    width: 27%;
+    left: 66%;
+    bottom: 10%;
+}
+
+/* End Acerca de Container */
+
+/* Start Experiencia de Container */
+
+.experienciaContainer {
+    position: relative;
+
+    margin: 20px 10px 10px 10px;
+    height: 34.5em;
+    
+    background: white;
+    border-radius: 20px;
+}
+
+.experienciaContainer .experienciaTitle {
+    width: 11%;
+    position: relative;
+    top: 3%;
+    left: 1%;
+    font-size: 28px;
+}
+
+.experienciaContainer .logoexperienciaContainer {
+    position: relative;
+    height: 12%;
+    width: 5%;
+    top: 6%;
+    left: 5%;
+}
+
+.logoExperiencia {
+    width: 100%;
+}
+
+.experiencia1 {
+    position: relative;
+    height: 20%;
+    width: 23%;
+    left: 12%;
+    bottom: 8%;
+}
+
+.experiencia1 .experiencia1Title {
+    font-size: 1.5rem;
+}
+
+.experiencia1 .empresaExperiencia1 {
+    position: relative;
+    bottom: 6%;
+    font-size: 90%;
+}
+
+.experiencia1 .fechaExperiencia1 {
+    position: relative;
+    bottom: 19%;
+    font-size: 12.5px;
+    color: gray;
+    font-weight: 600;
+}
+
+.experiencia1 .lugarExperiencia1 {
+    position: relative;
+    bottom: 36%;
+    font-size: 12.5px;
+    color: gray;
+    font-weight: 600;
+}
+
+.editexperienciaContainer {
+    position: relative;
+    width: 6.5%;
+    height: 15%;
+    left: 92.5%;
+    bottom: 35%;
+}
+
+.agregarExperiencia {
+    position: relative;
+    width: 20%;
+    left: 75%;
+    bottom: 10%;
+}
+
+.sacarExperiencia {
+    position: relative;
+    width: 17%;
+    left: 51%;
+    top: 50%;
+}
+
+.editarExperiencia {
+    position: relative;
+    width: 20%;
+    top: 50%;
+    right: 35%;
+}
+/* End Experiencia de Container */ 
+
+/* Start Educación */
+
+.educacionTitle {
+    width: 11%;
+    position: relative;
+    left: 1%;
+    font-size: 28px;
+    bottom: 22%;
+}
+
+.educacionContainer {
+    position: relative;
+    width: 95%;
+    height: 16%;
+    bottom: 21%;
+    left: 2%;
+    margin-top: 1%;
+}
+
+.logoeducContainer {
+    width: 22%;
+    height: 70%;
+    position: relative;
+}
+
+.logoeducContainer .logoEduc {
+    position: relative;
+    width: 39%;
+    right: 2%;
+
+}
+
+.educacionContainer .educTitle {
+    font-size: 1.5rem;
+    position: relative;
+    left: 9%;
+    bottom: 75%;
+    width: 4%;
+}
+
+.educacionContainer .educDescription {
+    position: relative;
+    left: 9%;
+    bottom: 82%;
+    font-size: 90%;
+    width: 23%;
+}
+
+.educacionContainer .fechaEduc {
+    position: relative;
+    bottom: 90%;
+    left: 9%;
+    font-size: 75%;
+    color: gray;
+    font-weight: 700;
+    width: 5.5%;
+}
+
+.educacionContainer .agregarEducacion {
+    position: relative;
+    width: 1.5%;
+    bottom: 14.3em;
+    left: 98.5%;
+}
+.educacionContainer .editEducacion1 {
+    /* El primer Edit del contenedor de Educacion */
+    position: relative;
+    width: 1.4%;
+    bottom: 9.7em;
+    left: 94.9%;
+}
+.educacionContainer .editEducacion {
+    width: 1.4%;
+    position: relative;
+    bottom: 171%;
+    left: 96.7%;
+}
+/* End Educación */
+
+/* Start Skills */
+
+.skillsContainer {
+    display: flex;
+    background: white;
+    height: 15em;
+    margin: 20px 10px 10px 10px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+}
+
+.skill {
+    position: relative;
+    height: 76%;
+    top: 20%;
+    width: 12%;
+    right: 8%;
+    text-align: center;
+}
+
+.skillTitle {
+    position: relative;
+    top: 12%;
+}
+
+.skillsTitle {
+    width: 23%;
+    position: relative;
+    top: 8%;
+    left: 1%;
+    font-size: 28px;
+}
+
+.progress {
+    width: 25%;
+    position: relative;
+    top: 30%;
+    left: 2%;
+}
+
+
+
+/* End Skills */
+
+/* Start Proyectos */
+
+.proyectosContainer {
+    background: white;
+    height: 18em;
+    margin: 20px 10px 10px 10px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+}
+
+
+.proyectosTitle {
+    width: 23%;
+    position: relative;
+    top: 6%;
+    left: 1%;
+    font-size: 28px;
+}
+
+.plusProyectos {
+    width: 1.4%;
+    position: relative;
+    bottom: 8%;
+    left: 96%;
+}
+
+.proyecto {
+    height: 35%;
+    /* width: 95%; */
+    position: relative;
+    margin: 10px;
+}
+
+.proyectoTitle {
+    font-size: 24px;
+    position: relative;
+    left: 4%;
+    width: 10.5%;
+    color: #438cf7;
+}
+
+.proyectoDescription {
+    display: inline;
+    position: relative;
+    left: 4%;
+    font-size: 14.5px;
+    width: 91%;
+    color: var(--txt-grayColor);
+}
+
+.proyecto .editrashProyecto {
+    position: absolute;
+    left: 93%;
+    height: 35%;
+    width: 5.5%;
+}
+
+.editrashProyecto .editProyecto {
+    width: 25%;
+    position: relative;
+    left: 8%;
+}
+
+.editrashProyecto .borrarProyecto {
+    width: 20%;
+    position: relative;
+    left: 39%;
+}
+/* End Proyectos */

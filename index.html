@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User - Bottino Marcos</title>
+    <!-- Estilos CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css-circular-prog-bar.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  </head>
+<body style="background: lightslategrey;">
+    <!-- Start Navbar -->
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <img class="logoAP" src="./assets/ArgPrograma.png" alt="">
+          <div class="redesContainer">
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-facebook-square"></i>
+              <i class="fa fa-twitter"></i>
+              <button type="button" class="btn btn-outline-success" id="open-popup">Login</button>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar-->
+        
+        <!-- Start Popup LOGIN -->
+        <div id="popup-container" style="display: none;">
+          <div id="close-btn">
+              <span class="closeBtn">&times;</span>
+            </div>
+            <h2 class="titlePopup">Popup Heading</h2>
+            <form id="form" style="position: relative; top: 13%;">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button style="position: relative; left: 42%;" type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+            </form>
+          </div>
+        <!-- End Popup LOGIN -->
+    
+    <!-- Start Profile -->
+  <div class="profileContainer">
+      <!-- Portada -->
+          <img class="portadaProfile" src="./assets/portada.png" alt="">
+      <!-- Logo -->
+        <div class="logoContainer">
+            <img class="logoProfile" src="./assets/logo.png" alt="">
+        </div>
+          <!-- Nombre y demas -->
+        <div class="datosContainer">
+            <h2>Marcos Bottino</h2>
+          <div class="infoContainer">
+            <p>informatico en Conicet</p>
+            <p class="ubiDatos">Buenos Aires (Argentina)</p>
+          </div>
+          <div class="buttonsContainer">
+              <button type="button" class="btn btn-primary">Tengo interés en</button>
+              <button type="button" class="btn btn-light">Añadir Sección</button>
+              <button type="button" class="btn btn-light">Más</button>
+          </div>
+        </div>
+        <div class="logoDtsContainer">
+          <img class="conicetImg" src="./assets/conicetLogo.png" alt="">
+          <p class="conicetName">CONICET</p>
+          <img class="utnImg" src="./assets/utnfrgpLogo.png" alt="">
+          <p class="utnName">UTN FRGP</p>
+        </div>
+  </div>
+    <!-- End Profile-->
+
+    <!-- Start Acerca De -->
+    <div class="acercaDeContainer">
+      <h2 class="acercadeTitle">Acerca de</h2>
+      <p class="acercadeTxt">Matemático, físico e informatico argentino considerado por muchos como el padre de la computación en la Argentina.</p>
+      <div class="editacercadeContainer">
+        <img class="editAcercaDe" src="./assets/svg/pen-to-square-solid.svg" alt="">
+      </div>
+    </div>
+    <!-- End Acerca De -->
+
+    <!-- Start Experiencia / Educación -->
+    <div class="experienciaContainer">
+      <!-- Start Experiencia -->
+      <h2 class="experienciaTitle">Experiencia</h2>
+      <div class="logoexperienciaContainer">
+        <img class="logoExperiencia" src="./assets/experienciaLogo.png" alt="">
+      </div>
+      <div class="experiencia1">
+        <h2 class="experiencia1Title">Backend Developer</h2>
+        <p class="empresaExperiencia1">Pixar - Jornada Parcial</p>
+        <p class="fechaExperiencia1">mar 2019 -actualidad - 2 años y 6 meses</p>
+        <p class="lugarExperiencia1">Guadalajara y alrededores, Mexico</p>
+      </div>
+      <div class="editexperienciaContainer">
+        <img class="agregarExperiencia" src="./assets/svg/plus-solid.svg" alt="">
+        <img class="sacarExperiencia" src="./assets/svg/trash-solid.svg" alt="">
+        <img src="./assets/svg/pen-to-square-solid.svg" alt="" class="editarExperiencia">
+      </div>
+      <!-- End Experiencia -->
+
+      <!-- Start Educación -->
+      <h2 class="educacionTitle">Educación</h2>
+      <div class="educacionContainer">
+        <div class="logoeducContainer">
+          <img class="logoEduc" src="./assets/educ1.jpg" alt="">
+        </div>
+          <h2 class="educTitle">UTN</h2>
+          <p class="educDescription">Ingenieria, Sistemas Computacionales, 1 año</p>
+          <p class="fechaEduc">2019 - 2023</p>
+          <img class="agregarEducacion" src="./assets/svg/plus-solid.svg" alt="">
+          <img class="editEducacion1" src="./assets/svg/pen-to-square-solid.svg" alt="">
+      </div>
+      <div class="educacionContainer">
+        <div class="logoeducContainer">
+          <img class="logoEduc" src="./assets/educ1.jpg" alt="">
+        </div>
+          <h2 class="educTitle">UTN</h2>
+          <p class="educDescription">Ingenieria, Sistemas Computacionales, 1 año</p>
+          <p class="fechaEduc">2019 - 2023</p>
+          <img class="editEducacion" src="./assets/svg/pen-to-square-solid.svg" alt="">
+      </div>
+      <div class="educacionContainer">
+        <div class="logoeducContainer">
+          <img class="logoEduc" src="./assets/educ1.jpg" alt="">
+        </div>
+          <h2 class="educTitle">UTN</h2>
+          <p class="educDescription">Ingenieria, Sistemas Computacionales, 1 año</p>
+          <p class="fechaEduc">2019 - 2023</p>
+          <img class="editEducacion" src="./assets/svg/pen-to-square-solid.svg" alt="">
+      </div>
+    </div> 
+    <!-- End Experiencia -->
+    <!-- Start Skills -->
+    <div class="skillsContainer">
+      <h2 class="skillsTitle">Hard Skills & Soft Skills</h2>
+      <div class="skill">
+        <h5 class="skillTitle">HTML</h5>
+        <div class="progress-circle over50 p87">
+          <span>90%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+      </div>
+      <div class="skill">
+        <h5 class="skillTitle">CSS</h5>
+        <div class="progress-circle over50 p87">
+          <span>90%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+      </div>
+      <div class="skill">
+        <h5 class="skillTitle">JS</h5>
+        <div class="progress-circle over50 p77">
+          <span>70%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+      </div>
+      <div class="skill">
+        <h5 class="skillTitle">Angular</h5>
+        <div class="progress-circle over50 p66">
+          <span>66%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+      </div>
+      <div class="skill">
+        <h5 class="skillTitle">NodeJS</h5>
+        <div class="progress-circle over50 p50">
+          <span>50%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+      </div>
+      <div class="skill">
+        <h5 class="skillTitle">MongoDB</h5>
+        <div class="progress-circle p33">
+          <span>33%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- End Skills-->
+    <!-- Start Proyectos -->
+    <div class="proyectosContainer">
+      <h2 class="proyectosTitle">Proyectos</h2>
+      <img class="plusProyectos" src="./assets/svg/plus-solid.svg" alt="">
+      <div class="proyecto">
+        <div class="editrashProyecto">
+          <img src="./assets/svg/pen-to-square-solid.svg" alt="" class="editProyecto">
+          <img src="./assets/svg/trash-solid.svg" alt="" class="borrarProyecto">
+        </div>
+        <h2 class="proyectoTitle">E - Farmacia</h2>
+        <p class="proyectoDescription">Desarrollamos un sitio web de comercio electrónico Front End basado en Angular de alto tráfico con diseño innovador basado en UIX. Totalmente integrado con los sistemas CRM y ERP internos.</p>
+      </div>
+      <div class="proyecto">
+        <div class="editrashProyecto">
+          <img src="./assets/svg/pen-to-square-solid.svg" alt="" class="editProyecto">
+          <img src="./assets/svg/trash-solid.svg" alt="" class="borrarProyecto">
+        </div>
+        <h2 class="proyectoTitle">E - Farmacia</h2>
+        <p class="proyectoDescription">Desarrollamos un sitio web de comercio electrónico Front End basado en Angular de alto tráfico con diseño innovador basado en UIX. Totalmente integrado con los sistemas CRM y ERP internos.</p>
+      </div>
+    </div>
+    <!-- End Proyectos -->
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</body>
+</html>
